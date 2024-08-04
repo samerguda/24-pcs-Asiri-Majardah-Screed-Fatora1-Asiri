@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24-pcs-Asiri-Majardah-Screed-Fatora1-Asiri</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .buttons {
+            margin: 20px 0;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .whatsapp-button {
+            display: inline-flex;
+            align-items: center;
+            background-color: #25D366;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+        }
+
+        .whatsapp-button i {
+            margin-right: 5px;
+        }
+
+        .whatsapp-button:hover {
+            background-color: #1ebe57;
+        }
+        h3{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div id="datetime"></div>
+        <div class="buttons">
+            <button onclick="copyTable()">Copy Table</button>
+            <button onclick="printTable()">Print Table</button>
+            <a id="whatsappButton" class="whatsapp-button" href="https://api.whatsapp.com/send?text=" target="_blank">
+                <i class="fab fa-whatsapp"></i>Send via WhatsApp
+            </a>
+        </div>
+    </div>
+
+
+    <h3>24-pcs-Asiri-Majardah-Screed-Fatora1-Asiri</h3>
+
+    <h2>Start Date: 4/8/2024</h2>
+    <h2>End Date : 15/8/2024</h2>
+    <table id="locationTable">
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Location Identifier</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>VS 80+711</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>DS 74+916</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>VS 74+790</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>DS 74+217</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>DS 71+263</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>DS 70+229</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>DS 69+008</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>VS 68+853</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>VS 68+425</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>VS 67+813</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>VS 67+028</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>VS 66+533</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>VS 66+112</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>VS 65+586</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>DS 65+204</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>VS 64+917</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>DS 60+041</td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td>VS 59+871</td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td>DS 59+609</td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>VS 59+488</td>
+            </tr>
+            <tr>
+                <td>21</td>
+                <td>VS 57+434</td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td>DS 55+970</td>
+            </tr>
+            <tr>
+                <td>23</td>
+                <td>VS 55+708</td>
+            </tr>
+            <tr>
+                <td>24</td>
+                <td>DS 53+213</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        // Display current date and time
+        function updateDateTime() {
+            const now = new Date();
+            const dateTimeString = now.toLocaleString();
+            document.getElementById("datetime").innerText = dateTimeString;
+        }
+        setInterval(updateDateTime, 1000);
+
+        // Copy table to clipboard
+        function copyTable() {
+            const table = document.getElementById("locationTable");
+            const range = document.createRange();
+            range.selectNode(table);
+            window.getSelection().removeAllRanges(); 
+            window.getSelection().addRange(range); 
+            try {
+                document.execCommand("copy");
+                alert("Table copied to clipboard!");
+            } catch (err) {
+                alert("Failed to copy table. Please try again.");
+            }
+            window.getSelection().removeAllRanges();
+        }
+
+        // Print table
+        function printTable() {
+            const printWindow = window.open("", "", "height=400,width=600");
+            printWindow.document.write("<html><head><title>Print Table</title>");
+            printWindow.document.write("<link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css' rel='stylesheet'>");
+            printWindow.document.write("<style>body{font-family:Arial,sans-serif;}table{width:100%;border-collapse:collapse;margin:20px 0;}th,td{padding:10px;text-align:left;border-bottom:1px solid #ddd;}th{background-color:#4CAF50;color:white;}</style>");
+            printWindow.document.write("</head><body>");
+            printWindow.document.write(document.getElementById("locationTable").outerHTML);
+            printWindow.document.write("</body></html>");
+            printWindow.document.close();
+            printWindow.print();
+        }
+
+        // Set WhatsApp link with table content
+        function updateWhatsAppLink() {
+            const table = document.getElementById("locationTable");
+            const rows = table.getElementsByTagName("tr");
+            let text = "Location Identifier Table:\n\n";
+            for (let i = 1; i < rows.length; i++) {
+                const cells = rows[i].getElementsByTagName("td");
+                text += `Image: ${cells[0].innerText} - Location: ${cells[1].innerText}\n`;
+            }
+            const whatsappLink = "https://api.whatsapp.com/send?text=" + encodeURIComponent(text);
+            document.getElementById("whatsappButton").setAttribute("href", whatsappLink);
+        }
+
+        // Update WhatsApp link initially and on table content change
+        updateWhatsAppLink();
+    </script>
+</body>
+
+</html>
